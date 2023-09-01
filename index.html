@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/premium-photo/chess-board-game-ideas-competition-strategy-business-success-concept_218381-4321.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+        table{
+            border: 10px solid black;
+            border-collapse: collapse;
+        }
+        
+        /*table,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }*/
+        tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 60px;
+            height: 60px;
+        }
+        td:hover{
+            cursor:pointer;
+            width: 60px;
+            height: 60px;
+            color:white;
+            background-color: black;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        table{
+            margin-bottom:0px;
+        }
+        /*tr:nth-of-type(even) td:nth-of-type(odd),tr:nth-of-type(odd) td:nth-of-type(even){
+            color:black;background-color:black;
+        }
+        tr:nth-of-type(even) td:nth-of-type(even),tr:nth-of-type(odd) td:nth-of-type(odd){
+            color:blanchedalmond;background-color:blanchedalmond;
+        }*/
+        h1{
+            margin-bottom: 30px;
+            margin-left: 150px;
+            color: aliceblue;
+        }
+        .white{
+            float: left;
+            width: 60px;
+            height: 60px;
+            background-color:whitesmoke;
+            font-size:50px;
+            text-align:center;
+            display: table-cell;
+            vertical-align:middle;
+        }
+        .black{
+            float: left;
+            width: 60px;
+            height: 60px;
+            background-color:#5A5A5A;
+            font-size:50px;
+            text-align:center;
+            display: table-cell;
+            vertical-align:middle;
+        }
+        div{
+            position: absolute;
+            margin-left: 600px;
+            border-collapse: collapse;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align:left;
+            margin-bottom: 20px;
+            margin-right: 15px;
+            font-size: 150%;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            animation: Chess 2s ease-in;
+            animation-iteration-count: 1;
+            transition: 1s;
+            opacity: 1;
+        }
+        
+        @keyframes Chess{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Interesting Facts about Chess Board</h1>
+        <ol>
+            <li>Chess had been used as a form of strategic military training from as early as Ancient India to the current age of technology.</li>
+            <li>The first Chessboard with alternating light and dark squares appears in Europe in 1090.</li>
+            <li>The record of moves without capture is of 100 moves during the Match between Thornton and M. Walker in 1992.</li>
+            <li>The longest possible chess game comes up to a whopping 5,949 moves!!</li>
+            <li>There are a total of eight different ways from the starting position to Mate in just two moves, whereas there are a total of 355 different paths to mate using three moves.</li>
+            <li>In 1985, Eric Knoppert played 500 games of 10-minute Chess in 68 hours.</li>
+        </ol>
+    </div>
+    <h1>CHESS BOARD</h1>
+    <table>
+        <tr>
+            <td class="white">&#9820;</td>
+            <td class="black">&#9822;</td>
+            <td class="white">&#9821;</td>
+            <td class="black">&#9819;</td>
+            <td class="white">&#9818;</td>
+            <td class="black">&#9821;</td>
+            <td class="white">&#9822;</td>
+            <td class="black">&#9820;</td>
+        </tr>
+        <tr>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+            <td class="black">&#9823;</td>
+            <td class="white">&#9823;</td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+            <td class="white">&#9817;</td>
+            <td class="black">&#9817;</td>
+        </tr>
+        <tr>
+            <td class="black">&#9814;</td>
+            <td class="white">&#9816;</td>
+            <td class="black">&#9815;</td>
+            <td class="white">&#9813;</td>
+            <td class="black">&#9812;</td>
+            <td class="white">&#9815;</td>
+            <td class="black">&#9816;</td>
+            <td class="white">&#9814;</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
